@@ -320,4 +320,4 @@ The complete flow can be verified by opening an email in Gmail and launching the
 
 ## Product Review
 
-Part 2 – Product Review: [`docs/Product Analyst Home Assignment Report.pdf`](docs/Product%20Analyst%20Home%20Assignment%20Report.pdf)
+The full assignment report - covering Part 1 (product spec), Part 2 (Product Review), and Part 3 (BI & Monitoring) - is a single document: [`docs/Product Analyst Home Assignment Report.pdf`](docs/Product%20Analyst%20Home%20Assignment%20Report.pdf)
