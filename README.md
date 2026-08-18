@@ -42,8 +42,7 @@ The Scoring Engine then combines those signals into the final risk score and ver
 
 This separation keeps detection logic independent from scoring, making the system easier to **test, tune, and extend**.
 
-> **Architecture Diagram:**
-> `[Add architecture image here]`
+![Architecture Diagram](docs/DIagram.png)
 
 ---
 
@@ -72,7 +71,7 @@ ProjectUpwind/
 │   └── appsscript.json             # Gmail Add-on configuration
 │
 └── docs/
-    ├── architecture.png
+    ├── DIagram.png
     └── Product Analyst Home Assignment Report.pdf
 ```
 
@@ -80,8 +79,6 @@ ProjectUpwind/
 * `scoring.py` combines signals into the final score and verdict.
 * `domain_utils.py` - shared domain and URL utilities used by multiple analyzers.
 * `knowledge.py` - static reference data such as brand domains and URL shorteners.
-
-**Planned, not yet in this repository:** `docs/architecture.png`.
 
 ---
 
