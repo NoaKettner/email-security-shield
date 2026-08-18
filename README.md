@@ -73,7 +73,7 @@ ProjectUpwind/
 │
 └── docs/
     ├── architecture.png
-    └── product-review.pdf
+    └── Product Analyst Home Assignment Report.pdf
 ```
 
 * Each `*_analyzer.py` file is an independent security check - it takes the parsed email and returns a list of signals.
@@ -81,7 +81,7 @@ ProjectUpwind/
 * `domain_utils.py` - shared domain and URL utilities used by multiple analyzers.
 * `knowledge.py` - static reference data such as brand domains and URL shorteners.
 
-**Planned, not yet in this repository:** the contents of `docs/` (architecture diagram and product review document).
+**Planned, not yet in this repository:** `docs/architecture.png`.
 
 ---
 
@@ -315,3 +315,9 @@ signals
 ```
 
 The complete flow can be verified by opening an email in Gmail and launching the Add-on.
+
+---
+
+## Product Review
+
+Part 2 – Product Review: [`docs/Product Analyst Home Assignment Report.pdf`](docs/Product%20Analyst%20Home%20Assignment%20Report.pdf)
