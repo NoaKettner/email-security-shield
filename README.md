@@ -126,18 +126,29 @@ The backend will run locally on:
 http://localhost:8000
 ```
 
-### Expose the Backend
+### ngrok Setup
 
-For development, use **ngrok**:
+For local development, the FastAPI backend runs on `localhost:8000`, which cannot be accessed directly by the Gmail Add-on. **ngrok** is used to create a temporary public HTTPS URL that forwards requests to the local backend.
+
+To use ngrok:
+
+1. Create a free ngrok account.
+2. Install ngrok.
+3. Connect your account using the provided authentication token:
+
+```bash
+ngrok config add-authtoken <YOUR_TOKEN>
+```
+
+4. Start the tunnel:
 
 ```bash
 ngrok http 8000
 ```
 
-Copy the generated HTTPS URL and configure it as the Add-on backend URL.
+5. Copy the generated HTTPS URL and use it as the backend URL in `Code.gs`.
 
-> ngrok is used for development only.
-> In production, the backend should be deployed to a persistent HTTPS environment.
+> The ngrok authentication token is a private secret and should never be committed to GitHub. ngrok is used for development only; in production, the backend should be deployed to a persistent HTTPS environment.
 
 ### Gmail Add-on Setup
 
@@ -304,23 +315,3 @@ signals
 ```
 
 The complete flow can be verified by opening an email in Gmail and launching the Add-on.
-
----
-
-## Future Improvements
-
-With more time, I would:
-
-* Tune scoring using labeled phishing and benign datasets.
-* Expand brand and domain intelligence.
-* Add ML/LLM-based signals as a secondary layer.
-* Add automated tests and monitoring.
-* Deploy the backend to a persistent cloud environment.
-* Improve the visual identity and add a custom surfboard-based product logo.
-
----
-
-## Product Review
-
-Part 2 – Product Review:
-`[Add link to Product Review document]`
